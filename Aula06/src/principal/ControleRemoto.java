@@ -32,17 +32,17 @@ public class ControleRemoto implements Controlador {
 		this.tocando = tocando;
 	}
 	@Override
-	public void ligar() {
+	public void Ligar() {
 		this.setLigado(true);
 		
 	}
 	@Override
-	public void desligar() {
+	public void Desligar() {
 		this.setLigado(false);
 		
 	}
 	@Override
-	public void abrirMenu() {
+	public void AbrirMenu() {
 		System.out.println("----Menu----");
 		System.out.println("Está ligado? " + this.getLigado());
 		System.out.println("Está Tocando? " + this.getTocando());
@@ -54,7 +54,7 @@ public class ControleRemoto implements Controlador {
 		
 	}
 	@Override
-	public void fecharMenu() {
+	public void FecharMenu() {
 		System.out.println("Fechando Menu... ");
 		
 	}
@@ -86,14 +86,14 @@ public class ControleRemoto implements Controlador {
 		
 	}
 	@Override
-	public void play() {
+	public void Play() {
 		if(this.getLigado()&&!(this.getTocando())){
 			this.setTocando(true);
 		}
 		
 	}
 	@Override
-	public void pause() {
+	public void Pause() {
 		if(this.getLigado()&& !(this.getTocando())){
 			this.setTocando(false);
 		}
